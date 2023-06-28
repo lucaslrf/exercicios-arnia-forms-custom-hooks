@@ -22,11 +22,11 @@ Crie um formulário utilizando o React Hook Form com os campos `Nome`, `E-mail`,
 
 ## Exercício 2:
 
-Crie um custom hook chamado `useFetch` que recebe uma URL como parâmetro e retorna os dados obtidos através de uma requisição GET.
+Crie um custom hook chamado `useNetworkStatus` que verifica se o usuário está online ou offline. Ele deve retornar um valor booleano indicando o status de conectividade.
 
 ## Exercício 3:
 
-Crie um custom hook chamado `useLocalStorage` que permite armazenar e recuperar valores em localStorage. Ele deve receber uma chave do tipo string como parâmetro e retornar o valor armazenado.
+Crie um custom hook chamado `useAuthentication` que gerencia o estado de autenticação do usuário. Ele deve fornecer funções para autenticar, desautenticar e verificar o estado de autenticação.
 
 ## Exerício 4:
 
