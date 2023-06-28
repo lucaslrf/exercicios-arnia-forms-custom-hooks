@@ -14,7 +14,7 @@ Crie um formulário utilizando o React Hook Form com os campos `Nome`, `E-mail`,
 - Valide se a senha possui pelo menos 1 letra maiúscula, 1 letra minúscula, 1 número, 1 caractere especial e se possui no mínimo 8 dígitos.
 - O campo `Tecnologias que tenho domínio` é um grupo de 6 checkbox com as tecnologias `PHP`, `Java`, `Javascript`, `Node`, `React`, `Outra`. Caso o usuário marque a opção `Outro`, deve aparecer um input para que ele digite qual outra tecnologia que ele domina. Segue um exemplo com o print abaixo:
 
-![](./_media/print-exemplo-campo-tecnologias-que-domino.png)
+![](./_media/print-exemplo-campo-tecnologias-que-domino_2.png)
 
 - Valide para que pelo menos uma opção do grupo `Tecnologias que tenho domínio` seja selecionada. Se a opção selecionada for `Outra`, verifique se o input que apareceu para digitar a tecnologia, está preenchido.
 
