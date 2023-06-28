@@ -7,8 +7,11 @@ Exercícios em React para prática dos alunos da Arnia
 Crie um formulário utilizando o React Hook Form com os campos `Nome`, `E-mail`, `Telefone`, `CPF/CNPJ`, `Data de nascimento`, `Tecnologias que tenho domínio`, `Senha` e `Confirmação de senha`. 
 
 - Crie um radio button (ou pode usar um select) pra selecionar CPF ou CNPJ
-- Crie uma função que verifica se o CPF é válido, e se for inválido deve informar ao usuário no momento que ele digitar o CPF inválido (Caso esteja selecionado CPF)
-- Crie uma função que verifica se o CNPJ é válido, e se for inválido deve informar ao usuário no momento que ele digitar o CNPJ inválido (Caso esteja selecionado CNPJ)
+- Crie uma função que verifica se o CPF é válido, e se for inválido deve informar ao usuário no momento que ele digitar o CPF inválido (Caso esteja selecionado CPF)*
+- Crie uma função que verifica se o CNPJ é válido, e se for inválido deve informar ao usuário no momento que ele digitar o CNPJ inválido (Caso esteja selecionado CNPJ)*
+
+* As funcoes para validação do CPF ou CNPJ podem ser encontradas na pasta functions desse projeto.
+
 - Adicione uma validação para garantir que os valores inseridos nos campos `Senha`e `Confirmação de senha` sejam iguais.
 - Adicione validações para garantir que todos os campos sejam preenchidos corretamente.
 - Valide se a senha possui pelo menos 1 letra maiúscula, 1 letra minúscula, 1 número, 1 caractere especial e se possui no mínimo 8 dígitos.
