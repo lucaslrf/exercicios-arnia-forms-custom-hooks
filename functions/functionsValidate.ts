@@ -9,23 +9,33 @@ export function validateCpf(value: string): boolean {
         let rest: number
         let strCPF = value.replace('-', '').replace('.', '').replace('.', '')
         sum = 0
-        if (strCPF === '00000000000') return false
+        if (strCPF === '00000000000'){
+            return false
+        } 
 
-        for (let i = 1; i <= 9; i++) sum = sum + parseInt(strCPF.substring(i - 1, i)) * (11 - i)
+        for (let i = 1; i <= 9; i++) {
+            sum = sum + parseInt(strCPF.substring(i - 1, i)) * (11 - i) 
+        }
+
         rest = (sum * 10) % 11
 
         if ((rest === 10) || (rest === 11)) rest = 0
+
         if (rest !== parseInt(strCPF.substring(9, 10))) return false
 
         sum = 0
-        for (let i = 1; i <= 10; i++) sum = sum + parseInt(strCPF.substring(i - 1, i)) * (12 - i)
+        for (let i = 1; i <= 10; i++){ 
+            sum = sum + parseInt(strCPF.substring(i - 1, i)) * (12 - i)
+        }
+
         rest = (sum * 10) % 11
 
         if ((rest === 10) || (rest === 11)) rest = 0
+
         return rest === parseInt(strCPF.substring(10, 11));
 
     } catch (e) {
-        console.error('validateCpf Error: ', e)
+        console.error('Validacao CPF Error: ', e)
         return false
     }
 }
@@ -84,7 +94,7 @@ export function validateCNPJ(value: string): boolean {
         result = sum % 11 < 2 ? 0 : 11 - sum % 11
         return result == parseInt(digits.charAt(1));
     } catch (e) {
-        console.error(e)
+        console.error('Validacao CNPJ Error: ',e)
         return false
     }
 
